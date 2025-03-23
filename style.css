@@ -16,7 +16,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url(/images/bg.jpg);
+    background-image: url(/coraz-n_azul/images/bg.jpg);
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -61,5 +61,5 @@ body{
 /*fonts*/
 @font-face {
     font-family: 'Poppins';
-    src: url(/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+    src: url(/coraz-n_azul/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
 }
