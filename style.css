@@ -328,6 +328,47 @@ box-shadow: -20px 30px 16px #02999e, -40px 60px 32px #02999e, inset -6px 6px 10p
     animation-delay: 1s;
     animation-duration: 11s;    
 }
+/*CONTACTS*/
+#contact{
+    padding: 0 160px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.login-wrapper{
+    width: 70%;
+    height: 3px;
+    background: red;
+}
+.paper{
+    padding: 60px 3rem 1rem 5.5rem;
+    font-size: 1.5rem;
+    width: 30%;
+    line-height: 50px;
+    background-image: 
+    linear-gradient(
+      90deg,
+      transparent,
+      transparent 4rem,
+      #e69797 4rem,
+      #e69797 4.25rem,
+      transparent 4.25rem
+    ),
+    linear-gradient(
+    #f4f0f0,
+    #f4f0f0 40px,
+    transparent 40px
+    ),
+    repeating-linear-gradient(
+    transparent,
+    transparent calc(50px - 2px),
+    #6868f8 calc(50px - 2px),
+    #6868f8 50px,
+    transparent 50px
+    );
+    background-color: #f4f0f0;
+    aspect-ratio: 12/16;
+}
 /*fonts*/
 @font-face {
     font-family: 'Poppins';
