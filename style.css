@@ -84,7 +84,7 @@ nav li:last-child{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/images/bg.jpg);
+    background-image: url(./images/bg.jpg);
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -216,5 +216,5 @@ nav li:last-child{
 /*fonts*/
 @font-face {
     font-family: 'Poppins';
-    src: url(/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+    src: url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
 }
