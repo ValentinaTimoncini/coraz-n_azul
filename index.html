@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/coraz-n_azul/style.css" type="text/css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
     <title>Corazón azul</title>
 </head>
 <body>
-    <div>
-        <nav></nav>
+    <nav>
+        <ul>
+            <li><a draggable="false" href="#home" class="route" id="route_home"><img src="/images/home.svg" alt="home icon" class="route-icon" draggable="false"></a></li>
+            <li><a draggable="false" href="#animals" class="route" id="route_animals"><img src="/images/turtle.svg" alt="turtle icon" class="route-icon" draggable="false"></a></li>
+            <li><a draggable="false" href="#contact" class="route" id="route_contact"><img src="/images/mail.svg" alt="mail icon" class="route-icon" draggable="false"></a></li>
+            <li><a draggable="false" href="#team" class="route" id="route_team"><img src="/images/team.svg" alt="people icon" class="route-icon" draggable="false"></a></li>
+        </ul>
+    </nav>
+    <div class="slide" id="home">
         <section class="hero-content">
             <h1>Corazón Azul</h1>
             <h2>De Sabrina Usvelli</h2>
@@ -16,6 +23,28 @@
         </section>
         <div id="hero">
         </div>
+    </div>
+    <div class="slide" id="animals">
+        <h1 class="step-title">Ambito</h1>
+        <div class="path">
+            <aside>
+                <img src="/images/step1.jpg" alt="ambito">
+            </aside>
+            <article>
+                <p id="step-text"></p>
+            </article>
+            <div class="steps">
+                <div data-id="1" class="step"><img src="/images/zoom.svg" draggable="false" alt="zoom image" class="step-icon"></div>
+                <div data-id="2" class="step"><img src="/images/target.svg" draggable="false" alt="target image" class="step-icon"></div>
+                <div data-id="3" class="step"><img src="/images/activity.svg" draggable="false" alt="activity image" class="step-icon"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="contact">
+            <h1>Contact</h1>
+    </div>
+    <div class="slide" id="team">
+            <h1>Team</h1>
     </div>
 
 
@@ -25,11 +54,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
     <script>
-        $('#hero').ripples({
+        $("#hero").ripples({
             resolution: 1024,
             dropRadius: 16,
             perturbance: 0.02,
-        });
+        })
+        $("nav .route").on("click", function(){
+            $(".route.active").removeClass("active")
+            $(this).addClass("active")
+        })
+        if(window.location.hash) {
+            let hash = window.location.hash.substring(1)
+            $("#route_"+hash).addClass("active")
+        } else {
+            $("#route_home").addClass("active")
+        }
+        const steps = [
+            {
+                title: "Ámbito",
+                text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ab pariatur incidunt dignissimos iure. Amet eveniet eum ex doloremque quibusdam delectus similique ipsum maiores nam incidunt, dolorum nesciunt, totam recusandae. Aperiam corrupti distinctio similique est? Illo voluptatem sit nisi? Neque omnis debitis possimus totam vitae distinctio quasi, voluptatem, blanditiis, esse officia tenetur sit! Non labore laborum nesciunt expedita quia fugiat!",
+                img: "step1.jpg"
+            },
+            {
+                title: "Objetivos",
+                text: "Lorem ip3123sum dolor, sit amet consectetur adipisicing elit. Fuga ab pariatur incidunt dignissimos iure. Amet eveniet eum ex doloremque quibusdam delectus similique ipsum maiores nam incidunt, dolorum nesciunt, totam recusandae. Aperiam corrupti distinctio similique est? Illo voluptatem sit nisi? Neque omnis debitis possimus totam vitae distinctio quasi, voluptatem, blanditiis, esse officia tenetur sit! Non labore laborum nesciunt expedita quia fugiat!",
+                img: "step2.webp"
+            },
+            {
+                title: "Actividades",
+                text: "42342Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ab pariatur incidunt dignissimos iure. Amet eveniet eum ex doloremque quibusdam delectus similique ipsum maiores nam incidunt, dolorum nesciunt, totam recusandae. Aperiam corrupti distinctio similique est? Illo voluptatem sit nisi? Neque omnis debitis possimus totam vitae distinctio quasi, voluptatem, blanditiis, esse officia tenetur sit! Non labore laborum nesciunt expedita quia fugiat!",
+                img: "step3.jpg"
+            }
+        ]
+        changeStep(1)
+        $(".steps .step").on("click", function(){
+            let id = $(this).data("id")
+            changeStep(id)
+        })
+        function changeStep(id){
+            $(".step.active").removeClass("active")
+            $(".step[data-id="+id+"]").addClass("active")
+            $(".step-title").text(steps[id-1].title)
+            $("#animals .path aside img").attr("src", "/images/"+steps[id-1].img)
+            $("#animals #step-text").text(steps[id-1].text)
+        }
     </script>
 </body>
 </html>
