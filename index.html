@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="./style.css" type="text/css">
     <title>Corazón azul</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a draggable="false" href="#home" class="route" id="route_home"><img src="/images/home.svg" alt="home icon" class="route-icon" draggable="false"></a></li>
-            <li><a draggable="false" href="#animals" class="route" id="route_animals"><img src="/images/turtle.svg" alt="turtle icon" class="route-icon" draggable="false"></a></li>
-            <li><a draggable="false" href="#contact" class="route" id="route_contact"><img src="/images/mail.svg" alt="mail icon" class="route-icon" draggable="false"></a></li>
-            <li><a draggable="false" href="#team" class="route" id="route_team"><img src="/images/team.svg" alt="people icon" class="route-icon" draggable="false"></a></li>
+            <li><a draggable="false" href="#home" class="route" id="route_home"><img src="./images/home.svg" alt="home icon" class="route-icon" draggable="false"></a></li>
+            <li><a draggable="false" href="#animals" class="route" id="route_animals"><img src="./images/turtle.svg" alt="turtle icon" class="route-icon" draggable="false"></a></li>
+            <li><a draggable="false" href="#contact" class="route" id="route_contact"><img src="./images/mail.svg" alt="mail icon" class="route-icon" draggable="false"></a></li>
+            <li><a draggable="false" href="#team" class="route" id="route_team"><img src="./images/team.svg" alt="people icon" class="route-icon" draggable="false"></a></li>
         </ul>
     </nav>
     <div class="slide" id="home">
@@ -28,15 +28,15 @@
         <h1 class="step-title">Ambito</h1>
         <div class="path">
             <aside>
-                <img src="/images/step1.jpg" alt="ambito">
+                <img src="./images/step1.jpg" alt="ambito">
             </aside>
             <article>
                 <p id="step-text"></p>
             </article>
             <div class="steps">
-                <div data-id="1" class="step"><img src="/images/zoom.svg" draggable="false" alt="zoom image" class="step-icon"></div>
-                <div data-id="2" class="step"><img src="/images/target.svg" draggable="false" alt="target image" class="step-icon"></div>
-                <div data-id="3" class="step"><img src="/images/activity.svg" draggable="false" alt="activity image" class="step-icon"></div>
+                <div data-id="1" class="step"><img src="./images/zoom.svg" draggable="false" alt="zoom image" class="step-icon"></div>
+                <div data-id="2" class="step"><img src="./images/target.svg" draggable="false" alt="target image" class="step-icon"></div>
+                <div data-id="3" class="step"><img src="./images/activity.svg" draggable="false" alt="activity image" class="step-icon"></div>
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@
             $(".step.active").removeClass("active")
             $(".step[data-id="+id+"]").addClass("active")
             $(".step-title").text(steps[id-1].title)
-            $("#animals .path aside img").attr("src", "/images/"+steps[id-1].img)
+            $("#animals .path aside img").attr("src", "./images/"+steps[id-1].img)
             $("#animals #step-text").text(steps[id-1].text)
         }
     </script>
