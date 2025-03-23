@@ -1,5 +1,5 @@
 <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M75 137.5C109.518 137.5 137.5 109.518 137.5 75C137.5 40.4822 109.518 12.5 75 12.5C40.4822 12.5 12.5 40.4822 12.5 75C12.5 109.518 40.4822 137.5 75 137.5Z" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M75 112.5C95.7107 112.5 112.5 95.7107 112.5 75C112.5 54.2893 95.7107 37.5 75 37.5C54.2893 37.5 37.5 54.2893 37.5 75C37.5 95.7107 54.2893 112.5 75 112.5Z" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M75 87.5C81.9036 87.5 87.5 81.9036 87.5 75C87.5 68.0964 81.9036 62.5 75 62.5C68.0964 62.5 62.5 68.0964 62.5 75C62.5 81.9036 68.0964 87.5 75 87.5Z" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M75 137.5C109.518 137.5 137.5 109.518 137.5 75C137.5 40.4822 109.518 12.5 75 12.5C40.4822 12.5 12.5 40.4822 12.5 75C12.5 109.518 40.4822 137.5 75 137.5Z" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M75 112.5C95.7107 112.5 112.5 95.7107 112.5 75C112.5 54.2893 95.7107 37.5 75 37.5C54.2893 37.5 37.5 54.2893 37.5 75C37.5 95.7107 54.2893 112.5 75 112.5Z" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M75 87.5C81.9036 87.5 87.5 81.9036 87.5 75C87.5 68.0964 81.9036 62.5 75 62.5C68.0964 62.5 62.5 68.0964 62.5 75C62.5 81.9036 68.0964 87.5 75 87.5Z" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -37,7 +37,7 @@ nav{
     left: 50px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 2;
+    z-index: 100;
     background-color: #fff;
     transition: .33s all linear;
     padding: 3px;
@@ -127,6 +127,7 @@ nav li:last-child{
     background: var(--main);
     color: var(--bg);
     position: relative;
+    overflow: hidden;
 }
 .path{
     display: flex;
@@ -137,6 +138,8 @@ nav li:last-child{
     column-gap: 20px;
     padding:  0 50px 0 160px;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 .step-title{
     width: 100%;
@@ -212,7 +215,119 @@ nav li:last-child{
     border-radius: 10px;
     border: 5px solid var(--bg);
 }
-
+.bubble{
+    position: absolute;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 200px;
+    background: #95bcbd;
+    opacity: 0.6;
+    border: 1px solid #4a9fa2;
+    animation: slideUp linear infinite;
+    z-index: 1;
+}
+@keyframes slideUp {
+    from{
+        top: 100%;
+        transform: rotate(0);
+    }
+    to{
+        top: -200px;
+        transform: rotate(2turn);
+    }
+}
+.bubble::before {
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+background: var(--main);
+border-radius:50%;
+box-shadow: -20px 30px 16px #02999e, -40px 60px 32px #02999e, inset -6px 6px 10px #2ac0c5, inset 2px 6px 10px #63ccd0, inset 20px -20px 22px white, inset 40px -40px 44px #429496;
+}
+.bubble::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1/1;
+    background: #E6FDFB;
+    border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+    right: 30%;
+    top: 20%;
+    opacity: 0.8;
+}
+.bubble:nth-of-type(7){
+    left: 20px;
+    width: 100px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+.bubble:nth-of-type(2){
+    left: 160px;
+    width: 80px;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+.bubble:nth-of-type(3){
+    right: 60px;
+    width: 90px;
+    animation-delay: 3s;
+    animation-duration: 9s;
+}
+.bubble:nth-of-type(4){
+    right: 500px;
+    width: 90px;
+    animation-delay: 2s;
+    animation-duration: 13s;    
+}
+.bubble:nth-of-type(5){
+    right: 900px;
+    width: 130px;
+    animation-delay: 4s;
+    animation-duration: 15s;    
+}
+.bubble:nth-of-type(6){
+    left: 500px;
+    width: 260px;
+    animation-delay: 1s;
+    animation-duration: 11s;    
+}
+.bubble:nth-of-type(8){
+    left: 40px;
+    width: 250px;
+    animation-delay: 4s;
+    animation-duration: 17s;
+}
+.bubble:nth-of-type(9){
+    right: 160px;
+    width: 180px;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+.bubble:nth-of-type(10){
+    left: 70px;
+    width: 190px;
+    animation-delay: 3s;
+    animation-duration: 10s;
+}
+.bubble:nth-of-type(11){
+    left: 550px;
+    width: 100px;
+    animation-delay: 2s;
+    animation-duration: 13s;    
+}
+.bubble:nth-of-type(12){
+    left: 900px;
+    width: 130px;
+    animation-delay: 4s;
+    animation-duration: 15s;    
+}
+.bubble:nth-of-type(13){
+    right: 200px;
+    width: 260px;
+    animation-delay: 1s;
+    animation-duration: 11s;    
+}
 /*fonts*/
 @font-face {
     font-family: 'Poppins';
