@@ -54,14 +54,70 @@
         <div class="bubble"></div>
     </div>
     <div class="slide" id="contact">
-        <div class="login-wrapper"></div>
-        <div class="paper">
-            <b>Requisitos</b><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nihil minima incidunt accusantium, eum inventore assumenda aliquid, eos deleniti fugit doloremque, neque totam. Asperiores velit veritatis, quod nulla tenetur impedit.
+        <div class="wood"></div>
+        <div class="kitchen">
+        </div>
+        <div class="fridge">
+            <div class="handle"></div>
+            <div class="handle"></div>
+            <div class="paper">
+                <h2><b>Requisitos</b></h2>
+                <ul>
+                    <li>¡Ama la naturaleza y el mar!</li>
+                    <li>Ganas de trabajar en equipo y divertirse.</li>
+                    <li>Estar listo para aprender cosas nuevas.</li>
+                    <li>¡Ayudar en limpiezas y cuidar a los animales!</li>
+                    <li>Tener ganas de hacer una diferencia en el mundo.</li>
+                    <!--li>Ser responsable y cumplir con las tareas.</li>
+                    <li>Estar dispuesto a ayudar y compartir tiempo con los demás.</li>
+                    <li>Ayudar a crear un ambiente amigable y respetuoso.</li>
+                    <li>Disfrutar trabajando al aire libre y en contacto con la naturaleza.</li-->
+                </ul><br>
+                <p>Join our team:<br>
+                    -345 567 8990<br>
+                    -join-us@corazon-azul.es
+                </p>
+            </div>    
         </div>
     </div>
     <div class="slide" id="team">
-            <h1>Team</h1>
+        <h1 class="team-h1">Conosci il team</h1>
+        <main class="team-main">
+            <div id="valentina">
+                <p class="name">Sabrina Usvelli</p>
+                <div class="img"><img src="./images/valentina.jpeg" alt=""></div>
+                <p class="job">CEO & Developer</p>
+            </div>
+            <div class="other">
+                <h2 class="team-h2">Il resto del team</h2>
+                <div class="team">
+                    <div class="person">
+                        <div class="img">
+                            <img src="./images/rebecca.jpeg" alt="" style="transform: rotate(-90deg)">
+                        </div>
+                        <p class="name">
+                            Rebecca Monteforte
+                        </p>
+                    </div>
+                    <div class="person">
+                        <div class="img" style="background-color: #abcdf6">
+                            <span>M</span>
+                        </div>
+                        <p class="name">
+                            Matteo Albonetti
+                        </p>
+                    </div>
+                    <div class="person">
+                        <div class="img" style="background-color: #c9cafe">
+                            <span>L</span>
+                        </div>
+                        <p class="name">
+                            Luca Vittori
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </main>
     </div>
 
 
@@ -89,17 +145,39 @@
         const steps = [
             {
                 title: "Ámbito",
-                text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ab pariatur incidunt dignissimos iure. Amet eveniet eum ex doloremque quibusdam delectus similique ipsum maiores nam incidunt, dolorum nesciunt, totam recusandae. Aperiam corrupti distinctio similique est? Illo voluptatem sit nisi? Neque omnis debitis possimus totam vitae distinctio quasi, voluptatem, blanditiis, esse officia tenetur sit! Non labore laborum nesciunt expedita quia fugiat!",
+                text: `
+                    <ul>
+                        <li>Protección y conservación de la flora y fauna marina.</li>
+                        <li>Proteger los océanos y las especies marinas, vitales para el equilibrio del planeta.</li>
+                        <li>Restaurar y mantener la salud de los mares y océanos.</li>
+                        <li>Es importante actuar ahora para proteger la biodiversidad marina.</li>
+                    </ul>`,
                 img: "step1.jpg"
             },
             {
                 title: "Objetivos",
-                text: "Lorem ip3123sum dolor, sit amet consectetur adipisicing elit. Fuga ab pariatur incidunt dignissimos iure. Amet eveniet eum ex doloremque quibusdam delectus similique ipsum maiores nam incidunt, dolorum nesciunt, totam recusandae. Aperiam corrupti distinctio similique est? Illo voluptatem sit nisi? Neque omnis debitis possimus totam vitae distinctio quasi, voluptatem, blanditiis, esse officia tenetur sit! Non labore laborum nesciunt expedita quia fugiat!",
+                text: `
+                    <ul>
+                        <li>Proteger la biodiversidad marina.</li>
+                        <li>Involucrar a la comunidad en la conservación de especies marinas.</li>
+                        <li>Educar a los jóvenes a través de actividades escolares y campañas de concienciación.</li>
+                        <li>Organizar limpiezas en playas y monitoreo de especies en peligro de extinción.</li>
+                        <li>Colaborar con otras organizaciones para obtener mejores resultados.</li>
+                        <li>Fortalecer el movimiento global de conservación marina.</li>
+                    </ul>`,
                 img: "step2.webp"
             },
             {
                 title: "Actividades",
-                text: "42342Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ab pariatur incidunt dignissimos iure. Amet eveniet eum ex doloremque quibusdam delectus similique ipsum maiores nam incidunt, dolorum nesciunt, totam recusandae. Aperiam corrupti distinctio similique est? Illo voluptatem sit nisi? Neque omnis debitis possimus totam vitae distinctio quasi, voluptatem, blanditiis, esse officia tenetur sit! Non labore laborum nesciunt expedita quia fugiat!",
+                text: `
+                    <ul>
+                        <li>Limpieza de playas y restauración de fondos marinos.</li>
+                        <li>Monitoreo y protección de especies en peligro de extinción.</li>
+                        <li>Recuperación de animales heridos, como tortugas y delfines.</li>
+                        <li>Organización de cursos de sensibilización ambiental en escuelas.</li>
+                        <li>Participación en proyectos de investigación y conservación marina.</li>
+                        <li>Promoción de la educación sobre la importancia de cuidar el medio ambiente.</li>
+                    </ul>`,
                 img: "step3.jpg"
             }
         ]
@@ -113,7 +191,7 @@
             $(".step[data-id="+id+"]").addClass("active")
             $(".step-title").text(steps[id-1].title)
             $("#animals .path aside img").attr("src", "./images/"+steps[id-1].img)
-            $("#animals #step-text").text(steps[id-1].text)
+            $("#animals #step-text").html(steps[id-1].text)
         }
     </script>
 </body>
