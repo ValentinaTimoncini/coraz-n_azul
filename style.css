@@ -288,8 +288,8 @@ box-shadow: -20px 30px 16px #02999e, -40px 60px 32px #02999e, inset -6px 6px 10p
 .bubble:nth-of-type(5){
     right: 900px;
     width: 130px;
-    animation-delay: 4s;
-    animation-duration: 15s;    
+    animation-delay: 6s;
+    animation-duration: 9s;    
 }
 .bubble:nth-of-type(6){
     left: 500px;
@@ -319,7 +319,7 @@ box-shadow: -20px 30px 16px #02999e, -40px 60px 32px #02999e, inset -6px 6px 10p
     left: 550px;
     width: 100px;
     animation-delay: 2s;
-    animation-duration: 13s;    
+    animation-duration: 9s;    
 }
 .bubble:nth-of-type(12){
     left: 900px;
@@ -330,8 +330,8 @@ box-shadow: -20px 30px 16px #02999e, -40px 60px 32px #02999e, inset -6px 6px 10p
 .bubble:nth-of-type(13){
     right: 200px;
     width: 260px;
-    animation-delay: 1s;
-    animation-duration: 11s;    
+    animation-delay: 2s;
+    animation-duration: 12s;    
 }
 /*TEAM*/
 #team{
