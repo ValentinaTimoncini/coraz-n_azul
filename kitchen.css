@@ -18,6 +18,8 @@
     align-items: end;
     justify-content: center;
     border-bottom: 20px solid #3e200a;
+    flex-wrap: wrap;
+    color: var(--bg);
 }
 .fridge{
     width: 30%;
@@ -30,6 +32,11 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: 2px 5px 5px #000;
+    transition: scale .5s ease-in;
+    cursor: pointer;
+}
+.fridge.active{
+    scale: 2.5;
 }
 .fridge::before{
     content: '';
@@ -104,17 +111,22 @@
     );
     background-color: #f4f0f0;
     position: relative;
-    scale: 0.5;
     width: 70%;
     aspect-ratio: 12/16;
-    cursor: pointer;
     box-shadow: 0px 1px 5px #000;
-
+    scale: .5;
+    transition: .33s all linear;
+    color: var(--text);
+}
+.fridge.active .paper{
+    width: 120%;
 }
 .paper-content{
+    opacity: 0;
     display: none;
 }
-.paper.active .paper-content{
+.fridge.active .paper-content{
+    opacity: 1;
     display: block;
 }
 .paper::before{
@@ -124,7 +136,7 @@
     width: 120px;
     height: 40px;
     background-color: var(--white);
-    opacity: .6;
+    opacity: .7;
     top: 20px;
     left: 20px;
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -136,7 +148,7 @@
     width: 120px;
     height: 40px;
     background-color: var(--white);
-    opacity: .6;
+    opacity: .7;
     bottom: 20px;
     right: 20px;
     transform: translate(50%, 50%) rotate(-45deg);
